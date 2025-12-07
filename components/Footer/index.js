@@ -13,6 +13,6 @@ export default Footer;
 // left copyright col
 const Copyright = () => (
   <div className={styles.copyright}>
-    &copy; {new Date().getFullYear()} Grant Sanderson
+    &copy; {new Date().getFullYear()} Dmitry Mayorov
   </div>
 );

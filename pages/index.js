@@ -42,20 +42,16 @@ function HomePage(props) {
   // Render homepage content directly without MDX to save ~100kB
   return (
     <NormalLayout {...props}>
-      <Section id="video-section" dark={true}>
+      {/* <Section id="video-section" dark={true}>
         <SocialIcons />
         <HomePageVideo />
-      </Section>
+      </Section> */}
 
       <Section id="lessons" dark={true}>
         <LessonGallery show="topic"/>
       </Section>
       
-      <Section width="narrow">
-        <SupportPitch />
-      </Section>
-      
-      <Section>
+      {/* <Section>
         <iframe 
           src="https://3blue1brown.substack.com/embed" 
           width="640" 
@@ -63,7 +59,7 @@ function HomePage(props) {
           style={{ border: 'none', maxWidth: '100%' }}
           title="3Blue1Brown Newsletter"
         />
-      </Section>
+      </Section> */}
     </NormalLayout>
   );
 }
