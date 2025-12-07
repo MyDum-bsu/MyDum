@@ -50,7 +50,7 @@ const Text = () => (
 // animated tagline text
 const Tagline = () => (
   <span className={styles.tagline}>
-    {"Animated math".split("").map((char, index) => (
+    {"Optimization".split("").map((char, index) => (
       <span key={index}>{char === " " ? "\u00A0" : char}</span>
     ))}
   </span>
@@ -68,27 +68,17 @@ const Nav = () => {
       </button>
 
       <NavLink
-        link="https://www.patreon.com/c/3blue1brown"
-        text="Patreon"
+        link="/theory"
+        text="Theory"
       />
       <NavLink
-        link="https://store.dftba.com/collections/3blue1brown"
-        text="Store"
+        link="/practice"
+        text="Practice"
       />
-      <NavLink link="/blog" text="Blog"/>
       <NavLink link="/extras" text="Extras"/>
-      <NavLink
-        link="https://some.3b1b.co"
-        text="SoME"
-        tooltip="The Summer of Math Exposition"
-      />
       <NavLink
         link="/faq"
         text="FAQ/Contact"
-      />
-      <NavLink
-        link="/about"
-        text="About"
       />
     </nav>
   );
